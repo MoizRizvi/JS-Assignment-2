@@ -77,6 +77,7 @@ alert("the factorial of "+n+ " is "+ans);
 
 
 //Task 7
+/*
 function counter(a, b) {
 		for (i = q; i <= y; i++) {
 			document.write(i);
@@ -86,9 +87,24 @@ var x = prompt("enter an end number");
 let a = parseInt(w);
 let b = parseInt(x);
 var z = counter(a, b);
-
-
 }
+*/
+
+//Task 8
+
+function hypotenuse(a, b) {
+
+function sqr(x) {
+	return x*x;
+}
+return Math.sqrt(sqr(a) + sqr(b));
+}
+var s = prompt("enter the base value");
+var d = prompt("enter the perpendicular value");
+var q = parseFloat(s), w = parseFloat(d);
+
+var z = hypotenuse(q, w);
+alert(z);
 
 
 
