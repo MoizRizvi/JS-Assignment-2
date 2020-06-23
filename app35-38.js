@@ -91,7 +91,7 @@ var z = counter(a, b);
 */
 
 //Task 8
-
+/*
 function hypotenuse(a, b) {
 
 function sqr(x) {
@@ -105,12 +105,61 @@ var q = parseFloat(s), w = parseFloat(d);
 
 var z = hypotenuse(q, w);
 alert(z);
+*/
 
 
+// Task 9
+/*
+function area(w, h) {
+	//parseFloat(w);
+	//parseFloat(h);
+	return w*h;
+
+}
+var a = prompt("Enter the width ");
+var b = prompt("Enter the height ");
+var z = area(a, b);
+alert("The area of the given triangle is "+z);
+*/
+
+//Task 10
+/*
+function check_palindrome(string) {
+	var b = string.toLowerCase();
+var a = b.split("");
+// document.write("The string has been split "+a);
+var r = a.reverse();
+//document.write("The string has been reversed "+r);
+if (a == r) {
+	alert("the string '" + string + "' is a palindrome");
+}
+else {
+	alert("This string " + string + " is not a palindrome");
+}
+}
+
+var a = "Madam";
+var z = check_palindrome(a);
+alert(z);
+*/
 
 
+//Task 11
+function titleCase(string) {
+	let a = string.split(" ");
+	function shift(a) {
+		var c = a.toString();
+		
+	var d =	c.charAt(0).toUpperCase() + c.substr(1).toLowerCase();
+	return d;
+	}
+	let b =  a.forEach(shift);
+return b;
+}
 
-
+var a = "the quick brown fox jumps over the lazy dog";
+var b = titleCase(a);
+alert(b);
 
 
 
